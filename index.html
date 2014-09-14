@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <!--Liliya Yerassilova
-    Introduction to Programming
+    Introduction to Programming CMPT 120L-111
 	Project 1 - My Web Page-->
 	
   <head>
@@ -15,7 +15,7 @@
 			   }
 		   h2 {color: purple;
 		       text-shadow: -2px 2px 2px #CC6666;
-		       font-family: Calibri;
+		       font-family: "Calibri", sans-serif;
 			   font-size: 30px;
 			   margin-left: 70px;
 			   }
@@ -23,7 +23,8 @@
 		       font-size: 25px;
 			   font-style: bold;
 			   }
-		   p  {color: #A52A2A;
+		div
+		     {color: #A52A2A;
 		       font-size: 16px;
 			   font-family: "Verdana", "Heltevica", sans-serif;
 			   align: center;
@@ -35,7 +36,39 @@
 			   border-radius: 25px; <!--adding rounded corners-->
 			   margin-bottom:20px;
               }
-		   a {color: #C71585;
+		#box2 {color: #6A5ACD;
+		       font-size: 18px;
+			   font-family: "Calibri", "Heltevica", sans-serif;
+			   border: 2px solid #FF7F50;
+			   padding: 2px 20px;
+			   background: #E6E6FA;
+			   width: 700px;
+			   text-align: center;
+			   background: -webkit-gradient(
+			       linear, left top, right top,
+				   color-stop(25%, white), color-stop(55%, #FFB6C1), color-stop(75%, #FFB6C1)); 
+			   border-radius: 15px; <!--adding rounded corners-->
+			   margin-bottom:20px;
+			   }
+		
+	 #movies {color: #CD5C5C;
+		      text-shadow: -1px 1px 1px #D0D0D0;
+		      font-family: "Calibri", sans-serif;
+			  font-size: 30px;
+		      border: none;
+		      background: none;
+ 		      width: none;
+			 }
+	 #mlist {color: #D0D0D0;
+             font-size: 25px;
+             font-family: sans-serif;
+             border: none;
+			 background: none;
+			 padding: none;
+             width: none;
+			 margin: none;
+            }			 
+		   a {color: #FF6347;
 		     }
      a:hover {color:purple;
               }	 
@@ -66,31 +99,32 @@
 	<h3>
 	   Favourite quote:
 	</h3>
-	<p style="text-align:center">
-	  My quote!
-	</p> 
+	<div id = "box1">
+	    <p style="text-align:center">
+	        My quote!
+	    </p> 
+	</div>
 	<br />
+	<div id = "movies">
 	  A list of movies I like:
-	<ul>
+	</div>
+	<div id = "mlist">
+	<ul style = "margin-left: 90px">
 	  <li>Something1</li>
 	  <li>Something2</li>
 	  <li>Something3</li>
 	</ul>
+	</div>
+	<div id = "box2">
+	    <p>
+	        If you have any favourite movies, share with me:
+                <a href="mailto:liliya-er@mail.ru?Subject=Hello%20again" target="_top">
+                    Share you favorite movies</a>
+	                    <!--ref. from http://www.w3schools.com/html/tryit.asp?filename=tryhtml_mailto-->
+        </p>
+    </div>		
 	
-	<p>
-	  If you have any favourite movies, share with me:
-          <a href="mailto:liliya-er@mail.ru?Subject=Hello%20again" target="_top">
-             Share you favorite movies</a>
-	<!--ref. from http://www.w3schools.com/html/tryit.asp?filename=tryhtml_mailto-->
-    </p>	  
-	
-	
-
-
-
-   </body>
-   
-   
+  </body>   
 </html>
    
 
