@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<!--Liliya Yerassilova
+    Introduction to Programming
+	Project 1 - My Web Page-->
+	
+  <head>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+      <meta name="keywords"           content="project, cmpt 120 class"/>
+      <meta name="author"             content="Liliya Yerassilova"/> 
+      <title>My First Web Page</title>
+        <style>
+           h1 {color: green;
+		       font-family: "Times New Roman";
+			   }
+		   h2 {color: purple;
+		       font-family: Calibri;
+			   margin-left: 70px;
+			   }
+		   h3 {color: orange;
+		       text-align:center;
+		       font-size: 25px;
+			   font-style: bold;
+			   }
+		   p  {color: blue;
+		       font-size: 20px;
+			   font-family: "Verdana", "Heltevica", sans-serif;
+              }			  		
+        </style>
+   </head>
+   <body>
+    <h1>
+	   My name in different styles:
+	</h1>
+	
+	<ol>
+	  <li style= "color: red; font-size: 16px; font-family: 'Heltevica', sans-serif">Liliya Yerassilova</li>
+	  <li style= "color: teal; font-size: 18px; font-family: 'Arial', 'Verdana', sans-serif">Liliya Yerassilova</li>
+	  <li>Liliya Yerassilova</li>
+	</ol>
+	
+	<h2>
+	  My class name in different styles:
+	</h2>
+	
+	<ul style="margin-left:90px">
+	  <li>Introduction to Programming</li>
+	  <li>Introduction to Programming</li>
+	  <li>Introduction to Programming</li>
+	</ul>
+	
+	
+	<h3>
+	   Favourite quote:
+	</h3>
+	<p style="text-align:center">
+	  My quote!
+	</p> 
+	<br />
+	  A list of movies I like:
+	<ul>
+	  <li>Something1</li>
+	  <li>Something2</li>
+	  <li>Something3</li>
+	</ul>
+	
+	<p style="color:pink">
+	  If you have any favourite movies, share with me:
+          <a href="mailto:liliya-er@mail.ru?Subject=Hello%20again" target="_top">
+             Share you favorite movies</a>
+	<!--ref. from http://www.w3schools.com/html/tryit.asp?filename=tryhtml_mailto-->
+    </p>	  
+	
+	
+
+
+
+   </body>
+   
+   
+</html>
+   
+
+
+
+
