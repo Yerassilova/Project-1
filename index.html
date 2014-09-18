@@ -3,14 +3,25 @@
 <!--Liliya Yerassilova
     Introduction to Programming CMPT 120L-111
 	Project 1 - My Web Page-->
-<!--Today is Thuirsday Sept. 18th, 2014-->
-	
+<!--Today is Thursday Sept. 18th, 2014-->	
   <head>
-      <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
       <meta name="keywords"           content="project, cmpt 120 class"/>
-      <meta name="author"             content="Liliya Yerassilova"/> 
-      <title>My First Web Page</title>
-        <style>
+      <meta name="author"             content="Liliya Yerassilova"/>
+	  
+      <script type="text/javascript">
+         function firstTest() {
+		      var myNumber = 6;
+			  var textArea = document.getElementById("firstta");
+			   if (myNumber > 1) {
+			    textArea.value = "Smiles. (Because there's a mile between the first and the last letter.)";
+		       }
+				}
+      </script>	  
+      <title>
+	      My First Web Page
+	  </title>
+      <style>
            h1 {color: #FA8072;
 		       font-family: "Times New Roman";
 			   }
@@ -24,10 +35,9 @@
 		       font-size: 25px;
 			   font-style: bold;
 			   }
-		  div
-		     {color: #A52A2A;
+	      div {color: #A52A2A;
 		       font-size: 16px;
-			   font-family: "Verdana", "Heltevica", sans-serif;
+			   font-family: "Verdana", sans-serif;
 			   align: center;
 			   border: 3px solid #FA8072;
 			   padding: 5px 20px;
@@ -37,9 +47,17 @@
 			   border-radius: 25px; <!--adding rounded corners-->
 			   margin-bottom:20px;
               }
+	     #movies {color: #CD5C5C;
+		          text-shadow: -1px 1px 1px #D0D0D0;
+		          font-family: "Calibri", sans-serif;
+			      font-size: 30px;
+		          border: none;
+		          background: none;
+ 		          width: none;
+			       }	
 		    #box2 {color: #6A5ACD;
 		           font-size: 18px;
-			       font-family: "Calibri", "Heltevica", sans-serif;
+			       font-family: "Calibri", sans-serif;
 			       border: 2px solid #FF7F50;
 			       padding: 2px 20px;
 			       background: #E6E6FA;
@@ -50,73 +68,79 @@
 				          color-stop(25%, white), color-stop(55%, #FFB6C1), color-stop(75%, #FFB6C1)); 
 			       border-radius: 15px; <!--adding rounded corners-->
 			       margin-bottom:20px;
+			      }					   			 
+		      a   {color: #FF6347;
+		          }
+          a:hover {color:purple;
+                  }	 
+	         .btn {position: absolute;
+		           top: 325px;
+			       left: 550px;		  
 			      }
-		
-	       #movies {color: #CD5C5C;
-		            text-shadow: -1px 1px 1px #D0D0D0;
-		            font-family: "Calibri", sans-serif;
-			        font-size: 30px;
-		            border: none;
-		            background: none;
- 		            width: none;
-			       }
-	 			 
-		  a   {color: #FF6347;
-		      }
-       a:hover {color:purple;
-               }	 
-           </style>
-    </head>
-    <body>
+	    .firstta {position: absolute;
+			       top: 180px;
+			      left:550px;
+			      }
+        </style>
+		<!--All color value were taken from www.w3school.com-->
+     </head>
+     <body>
           <h1>
 	         My name in different styles:
 	      </h1>
-	
-	      <ol>
-	         <li style= "color: red; font-size: 16px; font-family: 'Heltevica', sans-serif">Liliya Yerassilova</li>
-	         <li style= "color: teal; font-size: 18px; font-family: 'Arial', 'Verdana', sans-serif">Liliya Yerassilova</li>
-	         <li style="color: #BA55D3; text-shadow: -2px 2px 2px #D0D0D0; font-size: 22px">Liliya Yerassilova</li>
-	      </ol>
-	
+	       <ol>
+	          <li style= "color: red; font-size: 16px; font-family: 'Heltevica', sans-serif">Liliya Yerassilova</li>
+	          <li style= "color: teal; font-size: 18px; font-family: 'Arial', 'Verdana', sans-serif">Liliya Yerassilova</li>
+	          <li style="color: #BA55D3; text-shadow: -2px 2px 2px #D0D0D0; font-size: 22px">Liliya Yerassilova</li>
+	       </ol>
 	    <h2>
 	       My class name in different styles:
-	    </h2>
-	
-	    <ul style="margin-left:90px">
-	      <li style="color: #A52A2A; text-shadow: -2px 2px 2px #888888; font-size: 18px">Introduction to Programming</li>
-	      <li style="color: #C71585; font-size: 22px; font-weight: bold; font-family: 'Times New Roman', sans-serif">Introduction to Programming</li>
-	      <li style="color: #DC143C; text-shadow: -2px 2px 2px #D0D0D0; font-size: 22px">Introduction to Programming</li>
+	    </h2>	
+	      <ul style="margin-left:90px">
+	        <li style="color: #A52A2A; text-shadow: -2px 2px 2px #888888; font-size: 18px">Introduction to Programming</li>
+	        <li style="color: #C71585; font-size: 22px; font-weight: bold; font-family: 'Times New Roman', sans-serif">Introduction to Programming</li>
+	        <li style="color: #DC143C; text-shadow: -2px 2px 2px #D0D0D0; font-size: 22px">Introduction to Programming</li>
 	    </ul>
-	
-	
-	     <h3>
-	        Favourite quote:
+		<br />
+		<br />
+	    <h3>
+	        Favourite quote from a James Bond movie before 2006 (I hope):
 	    </h3>
-		
-	    <div id = "box1">
+	       <div id = "box1">
 	           <p style="text-align:center">
-	               My quote!
+	               "Why is it that people who can't take advice always insist on giving it?"
 	           </p> 
-	    </div>
-	    <br />
-	    <div id = "movies">
+	       </div>
+		   <textarea id = "firstta" 
+		             class = "firstta"
+		             rows="8" 
+					 cols="45">
+Here is a riddle that you will probably guess right: 
+
+What's the longest word in the English language? 		  
+		   </textarea>
+		   <input class = "btn"
+		          type="button"
+                  value="Show me the answer"
+                  onclick="firstTest();" />
+	       <br />
+	       <div id = "movies">
 	           A list of movies I like:
-	    </div>	
-	       <ul style = "margin-left: 90px">
-	           <li>Something1</li>
-	           <li>Something2</li>
-	           <li>Something3</li>
-	      </ul>
-	
-	    <div id = "box2">
-	          <p>
-	              If you have any favourite movies, share with me:
-                  <a href="mailto:liliya-er@mail.ru?Subject=Hello%20again" target="_top">
-                  Share you favorite movies</a>
+	       </div>	
+	         <ul style = "margin-left: 90px">
+	           <li>The Mentalist</li>
+	           <li>Oceans 11</li>
+	           <li>Gravity</li>
+	         </ul>
+	       <div id = "box2">
+	           <p>
+	               If you want to write to me:
+                  <a href="mailto:liliya-er@mail.ru?Subject=My%20message">
+                      Click here</a>
 	                    <!--ref. from http://www.w3schools.com/html/tryit.asp?filename=tryhtml_mailto-->
-              </p>
-        </div>			
-  </body>   
+               </p>
+           </div>			
+    </body>   
 </html>
    
 
